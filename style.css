@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, sans-serif;
+	background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1C7A0D;
+  
+ 
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  
+}
+
+header h1 {
+  margin: 0;
+	
+}
+ .earth{
+	float: right;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 50px;
+	margin-left: 20px;
+}
+
+#hero {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-align:center;
+	
+  
+	
+	  
+}
+
+#hero h2 {
+  margin-bottom: 20px;
+}
+
+#hero button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#products {
+  padding-left: 100px;
+}
+
+#products .product {
+  display: inline-block;
+  
+  border-spacing: 
+	  inherit;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 19%;
+  text-align: center;
+  
+
+}
+
+
+#products .product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+	/* 
+Define this in your CSS 
+.ease-outAnimation = Replace it by the name you want to give your animation
+.easeoutAnimObj = Assign this class to the elements to which you want to apply the animation
+*/
+
+.easeoutAnimObj {
+	position: relative;
+	/* Chrome, Safari*/
+	-webkit-animation-name: ease-outAnimation;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+	/* Mozilla */
+	-moz-animation-name: ease-outAnimation;
+	-moz-animation-duration: 5s;
+	-moz-animation-timing-function: ease-out;
+	-moz-animation-delay: 2s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-play-state: running;
+	/* Standard syntax */
+	animation-name: ease-outAnimation;
+	animation-duration: 5s;
+	animation-timing-function: ease-out;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+
+/* 
+Define the keyframe and changes
+*/
+
+/* Chrome, Safari */
+@-webkit-keyframes ease-outAnimation {
+	0% {
+		left: 0;
+		top: 0;
+	}
+	100% {
+		left: 200px;
+		top: 0;
+	}
+}
+
+/* Firefox */
+@-moz-keyframes ease-outAnimation {
+	0% {
+		left: 0;
+		top: 0;
+	}
+	100% {
+		left: 200px;
+		top: 0;
+	}
+}
+
+/* Standard syntax */
+@keyframes ease-outAnimation {
+	0% {
+		left: 0;
+		top: 0;
+	}
+	100% {
+		left: 200px;
+		top: 0;
+	}
+}
+	
+
+}
+
+#about {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
+#contact button {
+  background-color: #fff;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
